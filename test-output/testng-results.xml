@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="10" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T22:21:08 IST" name="Suite" finished-at="2023-11-30T22:21:08 IST" duration-ms="105">
+    <groups>
+    </groups>
+    <test started-at="2023-11-30T22:21:08 IST" name="Test" finished-at="2023-11-30T22:21:08 IST" duration-ms="105">
+      <class name="com.testNG.TestNGAnnotations123">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeSuite" finished-at="2023-11-30T22:21:08 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeTest" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeClass" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase4()[pri:-9, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase4" finished-at="2023-11-30T22:21:08 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase4()[pri:-9, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase4" finished-at="2023-11-30T22:21:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase4()[pri:-9, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase4" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase4()[pri:-9, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase4" finished-at="2023-11-30T22:21:08 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase4()[pri:-9, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase4" finished-at="2023-11-30T22:21:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TestCase5()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="TestCase5" finished-at="2023-11-30T22:21:08 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase5 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCase6()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="testCase6" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ValidateFlipKartApplicationLoadedSuccessfully()[pri:1, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="ValidateFlipKartApplicationLoadedSuccessfully" finished-at="2023-11-30T22:21:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateFlipKartApplicationLoadedSuccessfully -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="beforeMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ValidateLoginFunctionalty()[pri:5, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="ValidateLoginFunctionalty" finished-at="2023-11-30T22:21:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginFunctionalty -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterMethod" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterClass" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterTest" finished-at="2023-11-30T22:21:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.testNG.TestNGAnnotations123@55536d9e]" started-at="2023-11-30T22:21:08 IST" name="afterSuite" finished-at="2023-11-30T22:21:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.testNG.TestNGAnnotations123 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

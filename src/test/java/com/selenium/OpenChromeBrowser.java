@@ -11,12 +11,9 @@ public class OpenChromeBrowser {
 	WebDriver driver;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		OpenChromeBrowser obj = new OpenChromeBrowser();
-		WebDriverManager.chromedriver().setup();
-		obj.driver = new ChromeDriver(); 
-		obj.driver.get("https://www.amazon.com/");
-		obj.driver.manage().window().maximize();
-		obj.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		System.setProperty("webdriver.chrome.driver","D:\\JavaWorkSpace\\Selenium_LiveCourse_2204101110\\src\\test\\resources\\chromedriver-v119\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
+	    driver.get("https://www.facebook.com");
 	}
 
 }
