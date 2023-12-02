@@ -82,6 +82,22 @@ public class ValidateMouseOperations extends Library {
 	  
   }
   
+  @Test(priority=4)
+  public void VerifyDragAndDrop() throws InterruptedException 
+  {
+	  System.out.println("Inside Verify Drag and Drop Operation");
+	  driver.navigate().to(objProperties.getProperty("mouseOperationDragAndDrop"));
+	  PageLoadTimeOut();	 
+	  
+	  WebElement frame = driver.findElement(By.xpath("//iframe"));
+	  driver.switchTo().frame(frame);
+	  WebElement source = driver.findElement(By.id("draggable"));
+	  WebElement destination = driver.findElement(By.id("droppable"));
+	  
+	  Actions objActions = new Actions(driver);
+	  objActions.dragAndDrop(source, destination).build().perform();
+	  	  
+  }
   
   
   @BeforeMethod

@@ -1,69 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-02T19:53:59 IST" name="Default suite" finished-at="2023-12-02T19:54:07 IST" duration-ms="7660">
+  <suite started-at="2023-12-02T20:10:22 IST" name="Default suite" finished-at="2023-12-02T20:10:29 IST" duration-ms="6995">
     <groups>
     </groups>
-    <test started-at="2023-12-02T19:53:59 IST" name="Default test" finished-at="2023-12-02T19:54:07 IST" duration-ms="7660">
+    <test started-at="2023-12-02T20:10:22 IST" name="Default test" finished-at="2023-12-02T20:10:29 IST" duration-ms="6995">
       <class name="com.testNG.ValidateMouseOperations">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:53:54 IST" name="beforeSuite" finished-at="2023-12-02T19:53:59 IST" duration-ms="5840" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:16 IST" name="beforeSuite" finished-at="2023-12-02T20:10:22 IST" duration-ms="5406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:53:59 IST" name="beforeTest" finished-at="2023-12-02T19:53:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:22 IST" name="beforeTest" finished-at="2023-12-02T20:10:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:53:59 IST" name="beforeClass" finished-at="2023-12-02T19:53:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:22 IST" name="beforeClass" finished-at="2023-12-02T20:10:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:53:59 IST" name="beforeMethod" finished-at="2023-12-02T19:53:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:22 IST" name="beforeMethod" finished-at="2023-12-02T20:10:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="ValidateJQueryPageLoadedSuccessfully()[pri:1, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:53:59 IST" name="ValidateJQueryPageLoadedSuccessfully" finished-at="2023-12-02T19:54:02 IST" duration-ms="2247" status="PASS">
+        <test-method signature="ValidateJQueryPageLoadedSuccessfully()[pri:1, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:22 IST" name="ValidateJQueryPageLoadedSuccessfully" finished-at="2023-12-02T20:10:23 IST" duration-ms="1382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateJQueryPageLoadedSuccessfully -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:02 IST" name="afterMethod" finished-at="2023-12-02T19:54:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:23 IST" name="afterMethod" finished-at="2023-12-02T20:10:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:02 IST" name="beforeMethod" finished-at="2023-12-02T19:54:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:23 IST" name="beforeMethod" finished-at="2023-12-02T20:10:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyRightClickOperation()[pri:2, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:02 IST" name="VerifyRightClickOperation" finished-at="2023-12-02T19:54:04 IST" duration-ms="2638" status="PASS">
+        <test-method signature="VerifyRightClickOperation()[pri:2, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:23 IST" name="VerifyRightClickOperation" finished-at="2023-12-02T20:10:26 IST" duration-ms="2573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRightClickOperation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:04 IST" name="afterMethod" finished-at="2023-12-02T19:54:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:26 IST" name="afterMethod" finished-at="2023-12-02T20:10:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:04 IST" name="beforeMethod" finished-at="2023-12-02T19:54:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:26 IST" name="beforeMethod" finished-at="2023-12-02T20:10:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyDoubleClickOperation()[pri:3, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:04 IST" name="VerifyDoubleClickOperation" finished-at="2023-12-02T19:54:07 IST" duration-ms="2734" status="PASS">
+        <test-method signature="VerifyDoubleClickOperation()[pri:3, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:26 IST" name="VerifyDoubleClickOperation" finished-at="2023-12-02T20:10:27 IST" duration-ms="1051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDoubleClickOperation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:07 IST" name="afterMethod" finished-at="2023-12-02T19:54:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:27 IST" name="afterMethod" finished-at="2023-12-02T20:10:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:07 IST" name="afterClass" finished-at="2023-12-02T19:54:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:27 IST" name="beforeMethod" finished-at="2023-12-02T20:10:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyDragAndDrop()[pri:4, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:27 IST" name="VerifyDragAndDrop" finished-at="2023-12-02T20:10:29 IST" duration-ms="1946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDragAndDrop -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:29 IST" name="afterMethod" finished-at="2023-12-02T20:10:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:29 IST" name="afterClass" finished-at="2023-12-02T20:10:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:07 IST" name="afterTest" finished-at="2023-12-02T19:54:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:29 IST" name="afterTest" finished-at="2023-12-02T20:10:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.testNG.ValidateMouseOperations@378542de]" started-at="2023-12-02T19:54:07 IST" name="afterSuite" finished-at="2023-12-02T19:54:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.testNG.ValidateMouseOperations@3738449f]" started-at="2023-12-02T20:10:29 IST" name="afterSuite" finished-at="2023-12-02T20:10:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

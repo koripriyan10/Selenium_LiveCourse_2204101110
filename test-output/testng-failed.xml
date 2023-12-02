@@ -11,8 +11,8 @@
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="VerifyDragAndDrop"/>
           <include name="beforeClass"/>
-          <include name="VerifyDoubleClickOperation"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.testNG.ValidateMouseOperations -->
