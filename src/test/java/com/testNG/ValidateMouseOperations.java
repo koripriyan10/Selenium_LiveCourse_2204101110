@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,9 +47,11 @@ public class ValidateMouseOperations extends Library {
   public void VerifyRightClickOperation() throws InterruptedException 
   {
 	  System.out.println("Inside verify right click operation");     
+	  
 	  Actions objActions = new Actions(driver);	  
 	  WebElement element =  driver.findElement(By.xpath("//span[contains(text(),'right')]"));
 	  objActions.contextClick(element).build().perform();	  
+	  
 	  WebElement Paste = driver.findElement(By.xpath("//span[text()='Paste']")); 
 	  objActions.click(Paste).build().perform();
 	  Thread.sleep(2000);
@@ -63,7 +66,20 @@ public class ValidateMouseOperations extends Library {
   @Test(priority=3)
   public void VerifyDoubleClickOperation() throws InterruptedException 
   {
-	  	  
+	  System.out.println("Inside Verify Double Click Operation");
+	  driver.navigate().to(objProperties.getProperty("mouseOpeartionDoubleClick"));
+	  PageLoadTimeOut();	 
+	  
+	  JavascriptExecutor js = (JavascriptExecutor)driver;
+	  WebElement frame = driver.findElement(By.xpath("//iframe"));
+	  js.executeScript("arguments[0].scrollIntoView(true);",frame);
+	  driver.switchTo().frame(frame);
+	  
+	  WebElement DoubleClicBox = driver.findElement(By.xpath("//span[contains(text(),'Double')]/preceding-sibling::div"));	  
+	  Actions objActions = new Actions(driver);
+	  objActions.doubleClick(DoubleClicBox).build().perform();
+	  driver.switchTo().defaultContent();
+	  
   }
   
   

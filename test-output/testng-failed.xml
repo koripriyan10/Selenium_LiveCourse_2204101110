@@ -11,9 +11,8 @@
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="VerifyRightClickOperation"/>
           <include name="beforeClass"/>
-          <include name="ValidateJQueryPageLoadedSuccessfully"/>
+          <include name="VerifyDoubleClickOperation"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.testNG.ValidateMouseOperations -->
