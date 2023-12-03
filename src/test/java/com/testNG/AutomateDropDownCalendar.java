@@ -3,12 +3,14 @@ package com.testNG;
 import org.testng.annotations.Test;
 
 import com.pages.MultipleWindowsPage;
+import com.pages.PracticeFormPage;
 import com.utility.Library;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -21,6 +23,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -29,47 +32,56 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class ValidateMultipleWindows extends Library {
+public class AutomateDropDownCalendar extends Library {
 	
 // public WebDriver driver; 
 // public Properties objProperties;
   
   @Test(priority=1)
-  public void ValidateMultipleWindowsPageLoadedSuccessfully() throws InterruptedException
+  public void ValidatePracticeFormPageLoadedSuccessfully() throws InterruptedException
   {
-	  System.out.println("ValidateMultipleWindowsPageLoadedSuccessfully");
-	  driver.get(objProperties.getProperty("nxtgenaiacademyURL"));
+	  System.out.println("ValidatePracticeFormPageLoadedSuccessfully");
+	  driver.get(objProperties.getProperty("CalenderAndDropDownPage"));
 	  PageLoadTimeOut();
-	  String TitleOfMultipleWindowPage =  driver.getTitle();
-	  Assert.assertEquals(TitleOfMultipleWindowPage,objProperties.getProperty("nxtgenaiacademyTitle"));	      
+	  String TitleOfValidatePracticeFormPage =  driver.getTitle();
+	  Assert.assertEquals(TitleOfValidatePracticeFormPage,objProperties.getProperty("TitleOfPracticeFormPage"));	      
   }
   
   @Test(priority=2)
-  public void ValidateNewBrowserWindow() throws InterruptedException
+  public void ValidateDropDownCalendar()
   {
-     String MainWindowTitle =  driver.getTitle();
-     System.out.println("MainWindowTitle"+MainWindowTitle);
-	 driver.findElement(MultipleWindowsPage.newbrowserwindow123).click();
-	 Set<String> AllWindows = driver.getWindowHandles();
-	 
- 	 //WebDriverWait wait = new WebDriverWait(driver,60); 	 
-     //wait.until(ExpectedConditions.elementToBeClickable(NewBrowserWindowToggleMenuElement));
-	 
-	 for(String IndividualWindow :AllWindows)
-	 {
-		 driver.switchTo().window(IndividualWindow);
-		 WebElement NewBrowserWindowToggleMenuElement  = driver.findElement(MultipleWindowsPage.NewBrowserWindowToggleMenu); 
-		 WebElement NewBrowserWindowAboutMenuElement  = driver.findElement(MultipleWindowsPage.NewBrowserWindowAboutMenu); 
-	     String NewWindowTitle = driver.getTitle();
-     	 
-	     System.out.println("NewWindowTitle"+NewWindowTitle);
-	     
-	     if(NewWindowTitle.equals(objProperties.getProperty("newBrowserWindowTitle"))) 
-		 {      	   
-      	    Actions objActions = new Actions(driver);
-      	    objActions.click(NewBrowserWindowToggleMenuElement).build().perform();
-		 }		 
-	 } 
+    System.out.println("Inside Validate Drop Down and Calendar");
+    driver.findElement(PracticeFormPage.DateOfBirth).click();
+    WebElement Month =  driver.findElement(PracticeFormPage.SelectMonth);
+    WebElement Year =  driver.findElement(PracticeFormPage.SelectYear);
+    
+    Select objSelectMonth =  new Select(Month);    
+    objSelectMonth.selectByVisibleText(objProperties.getProperty("DOB_Month"));
+    
+    driver.findElement(PracticeFormPage.SelectYear).click();
+    Select objSelectYear =  new Select(Year);
+    objSelectYear.selectByValue(objProperties.getProperty("DOB_YY"));
+    //driver.findElement(PracticeFormPage.SelectYear).click();
+   
+    List<WebElement> AllDays =  driver.findElements(PracticeFormPage.AllDays); 
+
+
+    int NumberOfDays = AllDays.size();
+    
+    System.out.println(NumberOfDays);
+    
+    for(int i =0; i<=NumberOfDays-1;i++)
+    {
+    	String Day = AllDays.get(i).getText();
+    	if(Day.equals(objProperties.getProperty("DOB_DD")))
+    	{
+    		AllDays.get(i).click();
+    	}
+    }
+    
+    String ValueChoosen = driver.findElement(PracticeFormPage.DateOfBirth).getAttribute("value");
+    Assert.assertEquals(ValueChoosen,objProperties.getProperty("dateOfBirth"));
+    
   }
   
  
