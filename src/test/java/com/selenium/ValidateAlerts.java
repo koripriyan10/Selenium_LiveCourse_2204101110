@@ -69,6 +69,8 @@ public class ValidateAlerts extends Library{
 		String ConfirmResult = driver.findElement(AlertsPage.ConfirmResult).getText();
 		System.out.println("ConfirmResult:"+ConfirmResult);
 		
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
 		driver.findElement(AlertsPage.PromptAlert).click();
 		objAlert = driver.switchTo().alert();		
 		objAlert.sendKeys("Hi iam Learning Selenium");			
