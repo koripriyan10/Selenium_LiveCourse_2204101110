@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.AutomateDropDownCalendar">
+      <class name="com.testNG.ValidateAlerts">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="ValidateDropDownCalendar"/>
-          <include name="afterSuite"/>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="ValidatePromptAlert"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.testNG.AutomateDropDownCalendar -->
+      </class> <!-- com.testNG.ValidateAlerts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
