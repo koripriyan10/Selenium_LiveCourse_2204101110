@@ -3,19 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.ValidateAlerts">
+      <class name="com.testNG.testNgParameters">
         <methods>
           <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="ValidatePromptAlert"/>
-          <include name="afterClass"/>
+          <include name="testCaseWithoutParameter"/>
+          <include name="FillLoginForm"/>
+          <include name="OpenBrowser"/>
+          <include name="testCaseforEmail"/>
         </methods>
-      </class> <!-- com.testNG.ValidateAlerts -->
+      </class> <!-- com.testNG.testNgParameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

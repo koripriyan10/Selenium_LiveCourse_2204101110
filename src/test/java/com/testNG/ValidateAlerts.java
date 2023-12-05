@@ -1,6 +1,7 @@
 package com.testNG;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.pages.MultipleWindowsPage;
 import com.pages.PracticeFormPage;
@@ -57,7 +58,7 @@ public class ValidateAlerts extends Library {
 	  driver.findElement(By.id("alertButton")).click();
 	  Alert objAlert = driver.switchTo().alert();
 	  String AlertText = objAlert.getText();
-	  Assert.assertEquals(AlertText, "You clicked a butto");
+	  Assert.assertEquals(AlertText, "You clicked a button");
 	  objAlert.accept();	     
   }
   
@@ -83,11 +84,15 @@ public class ValidateAlerts extends Library {
 	  Alert objAlert = driver.switchTo().alert();
 	  String ConfirmAlertText = objAlert.getText();
 	  System.out.println("ConfirmAlertText-"+ConfirmAlertText);
-	  Assert.assertEquals(ConfirmAlertText, "Do you confirm action?");
+	  //Assert.assertEquals(ConfirmAlertText, "Do you confirm action?");
+	  SoftAssert objSAssert = new SoftAssert();
+	  objSAssert.assertEquals(ConfirmAlertText, "Do you confirm action?");
 	  objAlert.dismiss();
 	  String TextResult = driver.findElement(By.id("confirmResult")).getText();
 	  System.out.println("TextResult:"+ TextResult);
-	  Assert.assertEquals(TextResult, "You selected Cancel");
+//	  Assert.assertEquals(TextResult, "You selected Cancel");
+	  objSAssert.assertEquals(TextResult, "You selected Cancel");
+	  objSAssert.assertAll();
   }
   
   
