@@ -1,127 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-05T21:47:12 IST" name="Default suite" finished-at="2023-12-05T21:47:12 IST" duration-ms="58">
+  <suite started-at="2023-12-10T22:00:52 IST" name="Default suite" finished-at="2023-12-10T22:00:52 IST" duration-ms="56">
     <groups>
     </groups>
-    <test started-at="2023-12-05T21:47:12 IST" name="Default test" finished-at="2023-12-05T21:47:12 IST" duration-ms="58">
-      <class name="com.testNG.TestNgDataProvider">
-        <test-method signature="add(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="add" data-provider="ragu" finished-at="2023-12-05T21:47:12 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pwd1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[cricket]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-12-10T22:00:52 IST" name="Default test" finished-at="2023-12-10T22:00:52 IST" duration-ms="56">
+      <class name="com.testNG.TestNgFactory">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method signature="add(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="add" data-provider="ragu" finished-at="2023-12-05T21:47:12 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pwd2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc2@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tennis]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method signature="add(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="add" data-provider="ragu" finished-at="2023-12-05T21:47:12 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pwd3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc3@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[basket]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testmethod1 -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method signature="mul(int, int)[pri:0, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="mul" data-provider="dp" finished-at="2023-12-05T21:47:12 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mul -->
-        <test-method signature="mul(int, int)[pri:0, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="mul" data-provider="dp" finished-at="2023-12-05T21:47:12 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testmethod1 -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mul -->
-        <test-method signature="testcase3()[pri:3, instance:com.testNG.TestNgDataProvider@73ee04c8]" started-at="2023-12-05T21:47:12 IST" name="testcase3" finished-at="2023-12-05T21:47:12 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase3 -->
-      </class> <!-- com.testNG.TestNgDataProvider -->
+        </test-method> <!-- testmethod1 -->
+        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod2 -->
+        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod2 -->
+        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod2 -->
+        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod3 -->
+        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod3 -->
+        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod3 -->
+      </class> <!-- com.testNG.TestNgFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
