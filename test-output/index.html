@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\TestNG_Parallel_TestCases_Methods.xml</span>
+                    <span>D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\ParallelTestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testNG.TestNgParallelTestMethod" class="method navigator-link" hash-for-method="testMethodsFour">testMethodsFour</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.testNG.TestNgParallelTestSuite" class="method navigator-link" hash-for-method="testMethodOne">testMethodOne</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testNG.TestNgParallelTestMethod" class="method navigator-link" hash-for-method="testMethodsOne">testMethodsOne</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testNG.TestNgParallelTestMethod" class="method navigator-link" hash-for-method="testMethodsThree">testMethodsThree</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.testNG.TestNgParallelTestSuite" class="method navigator-link" hash-for-method="testMethodOne">testMethodOne</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,28 +125,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testNG.TestNgParallelTestMethod</span>
+              <span class="class-name">com.testNG.TestNgParallelTestSuite</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethodsFour">
-                  </a> <!-- testMethodsFour -->
-                  <span class="method-name">testMethodsFour</span>
+                  <a name="testMethodOne">
+                  </a> <!-- testMethodOne -->
+                  <span class="method-name">testMethodOne</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMethodsOne">
-                  </a> <!-- testMethodsOne -->
-                  <span class="method-name">testMethodsOne</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMethodsThree">
-                  </a> <!-- testMethodsThree -->
-                  <span class="method-name">testMethodsThree</span>
+                  <a name="testMethodOne">
+                  </a> <!-- testMethodOne -->
+                  <span class="method-name">testMethodOne</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,24 +147,25 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\TestNG_Parallel_TestCases_Methods.xml</span>
+            <span class="header-content">D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\ParallelTestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
+    &lt;parameter name=&quot;test-name&quot; value=&quot;abc&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testNG.TestNgParallelTestMethod&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testMethodsThree&quot;/&gt;
-          &lt;include name=&quot;testMethodsFour&quot;/&gt;
-          &lt;include name=&quot;testMethodsOne&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.testNG.TestNgParallelTestMethod --&gt;
+      &lt;class name=&quot;com.testNG.TestNgParallelTestSuite&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+    &lt;parameter name=&quot;test-name&quot; value=&quot;DEF&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNG.TestNgParallelTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,7 +177,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,24 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMethodsThree')
-data.setCell(0, 2, 'com.testNG.TestNgParallelTestMethod')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'testMethodOne')
+data.setCell(0, 2, 'com.testNG.TestNgParallelTestSuite')
+data.setCell(0, 3, 10);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMethodsFour')
-data.setCell(1, 2, 'com.testNG.TestNgParallelTestMethod')
-data.setCell(1, 3, 5);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testMethodsOne')
-data.setCell(2, 2, 'com.testNG.TestNgParallelTestMethod')
-data.setCell(2, 3, 1);
+data.setCell(1, 1, 'testMethodOne')
+data.setCell(1, 2, 'com.testNG.TestNgParallelTestSuite')
+data.setCell(1, 3, 9);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 66 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,18 +234,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.testNG.TestNgParallelTestMethod</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMethodsFive</span>
-                <br/>
-                <span class="ignored-method-name">testMethodsTwo</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -266,31 +245,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testNG.TestNgParallelTestMethod</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
+              <div class="chronological-class-name">com.testNG.TestNgParallelTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(DEF)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(abc)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testMethodsFour</span>
-                <span class="method-start">6 ms</span>
+                <span class="method-name">testMethodOne</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMethodsThree</span>
-                <span class="method-start">6 ms</span>
+                <span class="method-name">testMethodOne</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testMethodsOne</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
