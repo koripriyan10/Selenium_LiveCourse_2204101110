@@ -1,0 +1,28 @@
+@Data Provider
+---
+Test Method uses @DataProvider will be executed multiple number of times based on the configuration provided in it.
+Test Method will be executed using same instance of test class to which test method belongs.
+@DataProvider is used to provide parameters to a test.
+Test will be run taking different set of values each time.
+
+Return type: Object[][]
+
+@Factory
+---
+A factory will execute all the test methods present inside a test class using separate instances of the class.
+Return type: Object[]
+
+TestNG @Factory is used to create instances of test class dynamically. This is useful if you want to run the test 
+class any number of times.
+@Factory annotation to invoke an entire testNG class again and again with different parameters.
+
+TestNG Threads
+---
+We can use TestNG to perform load testing by creating multiple threads. We can even re-execute a test the no. of times we want.
+Two powerful attributes of @Test annotation of testNG.
+
+1. InvocationCount - This Attribute specifies the exact no of times a test method will get called.
+2. ThreadPoolSize - This attribute sets the total no. of threads that will run to call the test method..
+It'll let each test method to call run on a separate thread.
+
+Limited threads can be used to perform large number of load requests	

@@ -1,0 +1,23 @@
+Testng: Parallel execution of test classes, class and suite
+
+Parallelism or multithreading in software is defined as ability of software, operating system or program to execute
+multiple parts or sub- components of another program simultaneously.
+
+Test NG Allows the test to run in parallel or multi-threaded mode.
+Based on test suite configuration, different threads are started simultaneously, and the test methods are executed in them.
+
+Parallelism or multi-threaded execution can provide lot of advantages to the users.
+----
+1.Reduces execution time - All tests are executed in parallel, multiple tests get executed simultaneously,
+hence reducing the overall time taken to execute the tests.
+
+2.Allows Multi-threaded tests - Using this feature, we can write tests to verify certain multi-threaded code in the applications.
+Helps QA to configure their tests to be executed easily in multiple browsers or operating systems simultaneously.
+There are different ways in which parallelism can be configured in testNG.
+
+
+
+
+
+
+

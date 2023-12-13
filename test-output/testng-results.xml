@@ -1,61 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-10T22:00:52 IST" name="Default suite" finished-at="2023-12-10T22:00:52 IST" duration-ms="56">
+  <suite started-at="2023-12-13T17:53:05 IST" name="Suite" finished-at="2023-12-13T17:53:05 IST" duration-ms="54">
     <groups>
     </groups>
-    <test started-at="2023-12-10T22:00:52 IST" name="Default test" finished-at="2023-12-10T22:00:52 IST" duration-ms="56">
-      <class name="com.testNG.TestNgFactory">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="6" status="PASS">
+    <test started-at="2023-12-13T17:53:05 IST" name="Test" finished-at="2023-12-13T17:53:05 IST" duration-ms="54">
+      <class name="com.testNG.TestNgParallelTestMethod">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="beforeMethod" finished-at="2023-12-13T17:53:05 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="beforeMethod" finished-at="2023-12-13T17:53:05 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod1 -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethodsThree()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="testMethodsThree" finished-at="2023-12-13T17:53:05 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testMethodsThree -->
+        <test-method signature="testMethodsFour()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="testMethodsFour" finished-at="2023-12-13T17:53:05 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod1 -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testNG.TestNgFactory@59af0466]" started-at="2023-12-10T22:00:52 IST" name="beforeClass" finished-at="2023-12-10T22:00:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testMethodsFour -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="beforeMethod" finished-at="2023-12-13T17:53:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="testmethod1()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod1" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethodsOne()[pri:0, instance:com.testNG.TestNgParallelTestMethod@6b8ca3c8]" started-at="2023-12-13T17:53:05 IST" name="testMethodsOne" finished-at="2023-12-13T17:53:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod1 -->
-        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod2 -->
-        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod2 -->
-        <test-method signature="testmethod2()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod2" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod2 -->
-        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@34f7cfd9, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod3 -->
-        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@59af0466, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod3 -->
-        <test-method signature="testmethod3()[pri:0, instance:com.testNG.TestNgFactory@65f095f8, instance params:[]]" started-at="2023-12-10T22:00:52 IST" name="testmethod3" finished-at="2023-12-10T22:00:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod3 -->
-      </class> <!-- com.testNG.TestNgFactory -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testMethodsOne -->
+      </class> <!-- com.testNG.TestNgParallelTestMethod -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

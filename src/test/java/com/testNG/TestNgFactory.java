@@ -17,9 +17,10 @@ public class TestNgFactory {
 	  System.out.println("Before Before Class Executed");	  
   }
   
-  @Test
+  @Test(invocationCount = 10, threadPoolSize = 5)
   public void testmethod1() {
 	  System.out.println("Test Method1 parameter value is:"+ param);
+	  System.out.println("Thread" + Thread.currentThread().getId());
   }
   
   @Test
