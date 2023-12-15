@@ -50,16 +50,14 @@ public class Library {
 			driver = new InternetExplorerDriver();
 			break;
 			
-		case "chrome":		     
-		     System.setProperty("webdriver.chrome.driver","D:\\JavaWorkSpace\\Selenium_LiveCourse_2204101110\\src\\test\\resources\\chromedriver-v119\\chromedriver.exe");
-		     driver = new ChromeDriver();
-		      
-			// driver = new ChromeDriver();
+		case "chrome":		
+			System.setProperty("webdriver.chrome.driver","D:\\JavaWorkSpace\\Selenium_LiveCourse_2204101110\\src\\test\\resources\\chromedriver-v119\\chromedriver.exe");	    
 			ChromeOptions objChromeOptions = new ChromeOptions();
 			Map<String, Object> chromePreferences = new HashMap<String, Object>();
 			chromePreferences.put("download.default_directory", System.getProperty("user.dir"));
 			objChromeOptions.setExperimentalOption("prefs", chromePreferences);
-			//chromedriver = new ChromeDriver(objChromeOptions);
+			driver = new ChromeDriver(objChromeOptions);
+			
 			break;
 		}
 
