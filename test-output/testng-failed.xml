@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.ValidateWebTable">
+      <class name="com.testNG.ValidateFileUpload">
         <methods>
-          <include name="VerifytableInformation"/>
+          <include name="ValidateFileUpload"/>
         </methods>
-      </class> <!-- com.testNG.ValidateWebTable -->
+      </class> <!-- com.testNG.ValidateFileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
