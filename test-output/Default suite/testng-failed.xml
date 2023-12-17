@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.ValidateFileDownload">
+      <class name="com.testNG.ValidateDataDriven">
         <methods>
-          <include name="ValidateFileUpload"/>
-          <include name="ValidateFileDownloadPageSuccessfully"/>
+          <include name="ValidateDataDrivenPageLoadedSuccessfully"/>
         </methods>
-      </class> <!-- com.testNG.ValidateFileDownload -->
+      </class> <!-- com.testNG.ValidateDataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
