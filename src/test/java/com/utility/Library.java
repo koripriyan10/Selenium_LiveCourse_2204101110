@@ -3,6 +3,7 @@ package com.utility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -10,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -98,6 +100,26 @@ public class Library {
 		hmap.put("Password", objXSSFSheet.getRow(row).getCell(16).getStringCellValue());
 		hmap.put("confirm Password", objXSSFSheet.getRow(row).getCell(17).getStringCellValue());					 											
 		return hmap;
+	}
+	
+	public static void SelectValueFromDropdown(List<WebElement> AllElements, String DropDownValue) {
+		// TODO Auto-generated method stub
+		
+		
+		int TotalElements = AllElements.size();		
+		for(int i=1; i <= TotalElements-1 ; i++ )
+		{
+			String DropDownFromScript = AllElements.get(i).getText();
+						
+			if(DropDownFromScript.equals(DropDownValue))
+			{
+				AllElements.get(i).click();
+				break;
+			}
+			
+
+		}
+		
 	}
 	
 	public static void PageLoadTimeOut() {

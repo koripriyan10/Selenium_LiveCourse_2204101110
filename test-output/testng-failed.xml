@@ -5,7 +5,7 @@
     <classes>
       <class name="com.testNG.ValidateDataDriven">
         <methods>
-          <include name="ValidateDataDrivenPageLoadedSuccessfully"/>
+          <include name="VerifyDataDrivenFromExcel"/>
         </methods>
       </class> <!-- com.testNG.ValidateDataDriven -->
     </classes>
