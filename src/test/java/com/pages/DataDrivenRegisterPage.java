@@ -18,6 +18,17 @@ public class DataDrivenRegisterPage {
 	public static By AllLanguages = By.xpath("//div[@id='msdd']/following-sibling::div/ul/li/a");
 	public static By Skills = By.xpath("//select[@id=\"Skills\"]"); 
 	public static By AllSkills = By.xpath("//select[@id=\"Skills\"]/option"); 
+	
+	public static By Country = By.xpath("//span[@class=\"select2-selection select2-selection--single\"]"); 
+	public static By AllCountry = By.xpath("//span/ul[@id=\"select2-country-results\"]/li"); 
 	public static By SearchBox = By.xpath("//input[@type='search']");
 	public static By CloseIconOfLanguage = By.xpath("//span[@class='ui-icon ui-icon-close']");
+	public static By Year = By.xpath("//select[@id='yearbox']");
+	public static By Month = By.xpath("//select[@placeholder='Month']");
+	public static By Day = By.xpath("//select[@id='daybox']");
+	public static By AllYears = By.xpath("//select[@id='yearbox']/option");
+	public static By AllMonths = By.xpath("//select[@placeholder='Month']/option");
+	public static By AllDays = By.xpath("//select[@id='daybox']/option");
+	public static By Password = By.xpath("//input[@id='firstpassword']"); 
+	public static By ConfirmPassword = By.xpath("//input[@id='secondpassword']"); 
 }

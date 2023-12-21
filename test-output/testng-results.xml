@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-18T23:41:51 IST" name="Default suite" finished-at="2023-12-18T23:42:42 IST" duration-ms="51012">
+  <suite started-at="2023-12-21T14:19:01 IST" name="Default suite" finished-at="2023-12-21T14:20:06 IST" duration-ms="64981">
     <groups>
     </groups>
-    <test started-at="2023-12-18T23:41:51 IST" name="Default test" finished-at="2023-12-18T23:42:42 IST" duration-ms="51012">
+    <test started-at="2023-12-21T14:19:01 IST" name="Default test" finished-at="2023-12-21T14:20:06 IST" duration-ms="64981">
       <class name="com.testNG.ValidateDataDriven">
-        <test-method signature="ValidateDataDrivenPageLoadedSuccessfully()[pri:1, instance:com.testNG.ValidateDataDriven@6b8ca3c8]" started-at="2023-12-18T23:41:51 IST" name="ValidateDataDrivenPageLoadedSuccessfully" finished-at="2023-12-18T23:42:10 IST" duration-ms="19128" status="PASS">
+        <test-method signature="ValidateDataDrivenPageLoadedSuccessfully()[pri:1, instance:com.testNG.ValidateDataDriven@6b8ca3c8]" started-at="2023-12-21T14:19:01 IST" name="ValidateDataDrivenPageLoadedSuccessfully" finished-at="2023-12-21T14:19:22 IST" duration-ms="21062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateDataDrivenPageLoadedSuccessfully -->
-        <test-method signature="VerifyDataDrivenFromExcel()[pri:2, instance:com.testNG.ValidateDataDriven@6b8ca3c8]" started-at="2023-12-18T23:42:10 IST" name="VerifyDataDrivenFromExcel" finished-at="2023-12-18T23:42:42 IST" duration-ms="31850" status="PASS">
+        <test-method signature="VerifyDataDrivenFromExcel()[pri:2, instance:com.testNG.ValidateDataDriven@6b8ca3c8]" started-at="2023-12-21T14:19:22 IST" name="VerifyDataDrivenFromExcel" finished-at="2023-12-21T14:20:06 IST" duration-ms="43887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyDataDrivenFromExcel -->

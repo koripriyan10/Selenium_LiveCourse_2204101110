@@ -12,8 +12,10 @@ import java.util.List;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -54,15 +56,7 @@ public class ValidateDataDriven extends Library {
     	  
     	  for(int Row=1; Row <=NumberOfRows ; Row++)
     	  {
-//    		  System.out.println("-----------------------------");
-    		  hmap = ReadExcelFile(Row,objXSSFSheet);
-//    		  System.out.println(hmap.get("FirstName"));
-//    		  System.out.println(hmap.get("LastName"));
-//    		  System.out.println(hmap.get("Address"));
-//    		  System.out.println(hmap.get("Email"));
-//    		  System.out.println(hmap.get("PhoneNumber"));  
-//    		  System.out.println("-----------------------------");
-//    		  
+    		  hmap = ReadExcelFile(Row,objXSSFSheet);    		  
     		  driver.findElement(DataDrivenRegisterPage.FirstName).clear();
     		  driver.findElement(DataDrivenRegisterPage.FirstName).sendKeys(hmap.get("FirstName"));
     		  
@@ -106,49 +100,59 @@ public class ValidateDataDriven extends Library {
     		  JavascriptExecutor js = (JavascriptExecutor)driver;
 			  js.executeScript("window.scrollBy(0,500)");
 			  
+
+
+    		  //Languages
+			  //System.out.println(hmap.get("Hobbies")); 
+    		  //driver.findElement(DataDrivenRegisterPage.Languages).click();
+			  
 			  if(Row>1) {
 					driver.findElement(DataDrivenRegisterPage.CloseIconOfLanguage).click();
 				}
-
-    		  //Languages
-			  System.out.println(hmap.get("Hobbies")); 
-    		  driver.findElement(DataDrivenRegisterPage.Languages).click();
 			  
 
-			  
-
-    		  //Thread.sleep(2000);
-    		  List<WebElement> AllLanguages = driver.findElements(DataDrivenRegisterPage.AllLanguages);    
-    		     		  
+    
+			  driver.findElement(DataDrivenRegisterPage.Languages).click();
+    		  List<WebElement> AllLanguages = driver.findElements(DataDrivenRegisterPage.AllLanguages);       		     		  
     		  SelectValueFromDropdown(AllLanguages, hmap.get("Languages"));
-    		  
-//    		  
-//			  if(Row>1) {
-//			  driver.findElement(DataDrivenRegisterPage.CloseIconOfLanguage).click();
-//			  }
-			  
-			  Thread.sleep(3000);
+    		   		  
+			  driver.findElement(By.xpath("//label[(contains(text(),'Skills'))]")).click();  		  
     		  
     		  //Skills
-//    		  driver.findElement(DataDrivenRegisterPage.Skills).click();
-//    		  List<WebElement> AllSkills = driver.findElements(DataDrivenRegisterPage.Skills); 		  
-//    		  SelectValueFromDropdown(AllSkills, hmap.get("Skills"));
-//    		  
-//    		  driver.findElement(DataDrivenRegisterPage.SearchBox).click();
-    		  
-//    		  try
-//    		  {
-//        		  Robot objRobot = new Robot();
-//        		  objRobot.keyPress(KeyEvent.VK_ENTER);
-//        		  objRobot.keyRelease(KeyEvent.VK_ENTER);
-//    		  }
-//    		  
-//    		  catch(AWTException e)
-//    		  {
-//    			  e.printStackTrace();
-//    		  }
-    		  
+    		  driver.findElement(DataDrivenRegisterPage.Skills).click();
+    		  List<WebElement> AllSkills = driver.findElements(DataDrivenRegisterPage.AllSkills); 		  
+    		  SelectValueFromDropdown(AllSkills, hmap.get("Skills"));
+    		  driver.findElement(By.xpath("//label[(contains(text(),'Skills'))]")).click();
 
+    		  
+    		  driver.findElement(DataDrivenRegisterPage.Country).click();
+    		  driver.findElement(DataDrivenRegisterPage.SearchBox).sendKeys(hmap.get("SelectCountry"));
+    		  
+    		  try {
+					Robot objRobot = new Robot();
+					objRobot.keyPress(KeyEvent.VK_ENTER);
+					Thread.sleep(3000);
+					objRobot.keyRelease(KeyEvent.VK_ENTER);
+				} catch (AWTException e) {
+					e.printStackTrace();
+				}
+    		  
+    		  driver.findElement(DataDrivenRegisterPage.Year).click();
+    		  List<WebElement> AllYears = driver.findElements(DataDrivenRegisterPage.AllYears); 		  
+    		  SelectValueFromDropdown(AllYears, hmap.get("DOB_YY"));
+    		  
+    		  driver.findElement(DataDrivenRegisterPage.Month).click();
+    		  List<WebElement> AllMonths = driver.findElements(DataDrivenRegisterPage.AllMonths); 		  
+    		  SelectValueFromDropdown(AllMonths, hmap.get("DOB_MM"));
+    		  
+    		  driver.findElement(DataDrivenRegisterPage.Year).click();
+    		  List<WebElement> AllDays = driver.findElements(DataDrivenRegisterPage.AllDays); 		  
+    		  SelectValueFromDropdown(AllDays, hmap.get("DOB_DD"));
+    		      		
+              driver.findElement(DataDrivenRegisterPage.Password).sendKeys(hmap.get("Password"));
+              driver.findElement(DataDrivenRegisterPage.ConfirmPassword).sendKeys(hmap.get("confirm Password"));
+    		
+    		  
     	  }
 
     	  objXSSWorkBook.close(); 
