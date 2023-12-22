@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.testNG.ValidateMouseOperations"/>
+      <class name="com.testNG.TestNgParallelClass3"/>
+      <class name="com.testNG.ValidateFileUpload"/>
+      <class name="com.testNG.ValidateMultipleWindows"/>
+      <class name="com.testNG.ValidateFileDownload"/>
+      <class name="com.testNG.ValidateAlerts"/>
+      <class name="com.testNG.TestNGParallelClass2"/>
+      <class name="com.testNG.TestNgDataProvider"/>
+      <class name="com.testNG.AutomateDropDownCalendar"/>
+      <class name="com.testNG.TestNgFactory"/>
+      <class name="com.testNG.TestNgParallelTestMethod"/>
+      <class name="com.testNG.testNgParameters"/>
+      <class name="com.testNG.NewTest"/>
+      <class name="com.testNG.TestNgGroups"/>
+      <class name="com.testNG.TestNgParallelTestSuite"/>
+      <class name="com.testNG.TestNGAnnotations"/>
+      <class name="com.testNG.TestNGParallelClass1"/>
+      <class name="com.testNG.ValidateWebTable"/>
+      <class name="com.testNG.TestNGAnnotations123"/>
+      <class name="com.testNG.ValidateDataDriven"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
