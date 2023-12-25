@@ -2,6 +2,8 @@ package com.utility;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,7 +18,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -121,6 +127,44 @@ public class Library {
 
 		}
 		
+	}
+	
+	public static WebDriver getBrowserCapabilities(String Browser)
+	{
+		DesiredCapabilities capabilities = null;
+		
+		if(Browser == null || Browser.equalsIgnoreCase("CHROME"))
+		{
+			capabilities = DesiredCapabilities.chrome();
+			ChromeOptions options = new  ChromeOptions();
+			capabilities.merge(options);
+		}
+		
+		if(Browser == null || Browser.equalsIgnoreCase("FIREFOX"))
+		{
+			capabilities = DesiredCapabilities.firefox();
+			FirefoxOptions options = new  FirefoxOptions();
+			capabilities.merge(options);
+		}
+		
+		if(Browser == null || Browser.equalsIgnoreCase("InternetExplorer"))
+		{
+			capabilities = DesiredCapabilities.internetExplorer();
+			InternetExplorerOptions options = new  InternetExplorerOptions();
+			capabilities.merge(options);
+		}
+		
+		try
+		{
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"),capabilities);	
+		}
+		
+		catch(MalformedURLException e)
+		{
+			e.printStackTrace();
+		}
+		
+		return driver;
 	}
 	
 	public static void PageLoadTimeOut() {

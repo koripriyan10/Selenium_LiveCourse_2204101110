@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1767679616\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\testngSeleniumGrid.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,26 +91,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.SeleniumGrid.InternetExplorer" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testNG.ValidateDataDriven" class="method navigator-link" hash-for-method="ValidateDataDrivenPageLoadedSuccessfully">ValidateDataDrivenPageLoadedSuccessfully</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.SeleniumGrid.Chrome" class="method navigator-link" hash-for-method="testCaseChrome">testCaseChrome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.testNG.ValidateDataDriven" class="method navigator-link" hash-for-method="VerifyDataDrivenFromExcel">VerifyDataDrivenFromExcel</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.SeleniumGrid.Firefox" class="method navigator-link" hash-for-method="testCaseFireFox">testCaseFireFox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,129 +135,352 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testNG.ValidateDataDriven</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.SeleniumGrid.InternetExplorer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidateDataDrivenPageLoadedSuccessfully">
-                  </a> <!-- ValidateDataDrivenPageLoadedSuccessfully -->
-                  <span class="method-name">ValidateDataDrivenPageLoadedSuccessfully</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyDataDrivenFromExcel">
-                  </a> <!-- VerifyDataDrivenFromExcel -->
-                  <span class="method-name">VerifyDataDrivenFromExcel</span>
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. New session request timed out 
+Host info: host: &apos;DESKTOP-BSS5US9&apos;, ip: &apos;192.168.1.5&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BSS5US9&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+remote stacktrace: [{fileName=LocalNewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=addToQueue, className=org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue, lineNumber=221, classLoaderName=app}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$new$0, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=68, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$TemplatizedRoute, lineNumber=193, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=NewSessionQueue.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.sessionqueue.NewSessionQueue, lineNumber=128, classLoaderName=app}, {fileName=SpanWrappedHttpHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler, lineNumber=87, classLoaderName=app}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=Router.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.grid.router.Router, lineNumber=87, classLoaderName=app}, {fileName=CheckOriginHeader.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.CheckOriginHeader, lineNumber=69, classLoaderName=app}, {fileName=CheckContentTypeHeader.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.CheckContentTypeHeader, lineNumber=75, classLoaderName=app}, {fileName=EnsureSpecCompliantResponseHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders, lineNumber=34, classLoaderName=app}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=handle, className=org.openqa.selenium.remote.http.Route$CombinedRoute, lineNumber=345, classLoaderName=app}, {fileName=Route.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Route, lineNumber=69, classLoaderName=app}, {fileName=AddWebDriverSpecHeaders.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.AddWebDriverSpecHeaders, lineNumber=35, classLoaderName=app}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=app}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=app}, {fileName=ErrorFilter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$apply$0, className=org.openqa.selenium.remote.ErrorFilter, lineNumber=44, classLoaderName=app}, {fileName=Filter.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=execute, className=org.openqa.selenium.remote.http.Filter$1, lineNumber=63, classLoaderName=app}, {fileName=SeleniumHandler.java, moduleVersion=null, nativeMethod=false, moduleName=null, methodName=lambda$channelRead0$0, className=org.openqa.selenium.netty.server.SeleniumHandler, lineNumber=44, classLoaderName=app}, {fileName=Executors.java, moduleVersion=17.0.9, nativeMethod=false, moduleName=java.base, methodName=call, className=java.util.concurrent.Executors$RunnableAdapter, lineNumber=539, classLoaderName=null}, {fileName=FutureTask.java, moduleVersion=17.0.9, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.FutureTask, lineNumber=264, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.9, nativeMethod=false, moduleName=java.base, methodName=runWorker, className=java.util.concurrent.ThreadPoolExecutor, lineNumber=1136, classLoaderName=null}, {fileName=ThreadPoolExecutor.java, moduleVersion=17.0.9, nativeMethod=false, moduleName=java.base, methodName=run, className=java.util.concurrent.ThreadPoolExecutor$Worker, lineNumber=635, classLoaderName=null}, {fileName=Thread.java, moduleVersion=17.0.9, nativeMethod=false, moduleName=java.base, methodName=run, className=java.lang.Thread, lineNumber=842, classLoaderName=null}]
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.utility.Library.getBrowserCapabilities(Library.java:159)
+	at com.SeleniumGrid.InternetExplorer.beforeMethod(InternetExplorer.java:28)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SeleniumGrid.Chrome</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseChrome">
+                  </a> <!-- testCaseChrome -->
+                  <span class="method-name">testCaseChrome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.SeleniumGrid.Firefox</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCaseFireFox">
+                  </a> <!-- testCaseFireFox -->
+                  <span class="method-name">testCaseFireFox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1767679616\testng-customsuite.xml</span>
+            <span class="header-content">D:\JavaWorkSpace\Selenium_LiveCourse_2204101110\testngSeleniumGrid.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testNG.ValidateDataDriven&quot;/&gt;
+      &lt;class name=&quot;com.SeleniumGrid.Firefox&quot;/&gt;
+      &lt;class name=&quot;com.SeleniumGrid.Chrome&quot;/&gt;
+      &lt;class name=&quot;com.SeleniumGrid.InternetExplorer&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyDataDrivenFromExcel')
-data.setCell(0, 2, 'com.testNG.ValidateDataDriven')
-data.setCell(0, 3, 43887);
+data.setCell(0, 1, 'testCaseFireFox')
+data.setCell(0, 2, 'com.SeleniumGrid.Firefox')
+data.setCell(0, 3, 8658);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ValidateDataDrivenPageLoadedSuccessfully')
-data.setCell(1, 2, 'com.testNG.ValidateDataDriven')
-data.setCell(1, 3, 21062);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'testCaseChrome')
+data.setCell(1, 2, 'com.SeleniumGrid.Chrome')
+data.setCell(1, 3, 7333);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'f')
+data.setCell(2, 2, 'com.SeleniumGrid.InternetExplorer')
+data.setCell(2, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testNG.ValidateDataDriven</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">ValidateDataDrivenPageLoadedSuccessfully</span>
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyDataDrivenFromExcel</span>
-                <span class="method-start">21067 ms</span>
+                <span class="method-name">testCaseFireFox</span>
+                <span class="method-start">12758 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCaseChrome</span>
+                <span class="method-start">13553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">20889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">20890 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">21418 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">21419 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">f</span>
+                <span class="method-start">300593 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">300597 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">300599 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">300600 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">300601 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">300601 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Chrome</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">300652 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.Firefox</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">300652 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.SeleniumGrid.InternetExplorer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">300652 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
